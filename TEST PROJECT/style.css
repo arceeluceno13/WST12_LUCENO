@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(27, 190, 196);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(16, 16, 124);
+    text-align: center;
+}
+#gwapo{
+    text-align: center;
+    font-family: cursive;
+    font-size: x-large;
+    color: rgb(28, 142, 170);
+   
+}
+hakdog{
+    color: blueviolet;
+}
