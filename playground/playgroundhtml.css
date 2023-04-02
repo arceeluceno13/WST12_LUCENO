@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+
+textarea {
+    background-color: black;
+    color: white;
+    width: 600px;
+    height: 350px;
+}
+
+iframe {
+    width: 400px;
+    height: 350px
+    
+}
