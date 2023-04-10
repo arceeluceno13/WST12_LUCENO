@@ -9,11 +9,10 @@ header{
   position: fixed;
   z-index: 10;
 }
-.title{
+.title a{
   letter-spacing: 2px;
-}
-.title:hover{
-  cursor: pointer;
+  text-decoration: none;
+
 }
 .navbar ul{
   align-items: center;
