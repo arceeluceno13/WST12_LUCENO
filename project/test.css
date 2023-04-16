@@ -1,31 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Noticia+Text:wght@700&family=Poppins:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  color: #270722;
+}
 body {
   margin: 0;
-}
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  width: 100%;
-  top: 0;
-  padding: 10px 5px;
-  position: fixed;
-}
-.title{
-  color: #fdb906;
-  letter-spacing: 2px;
-}
-.title:hover{
-  cursor: pointer;
-}
-.navbar ul{
-  align-items: center;
-  list-style-type: none;
-  overflow: hidden;
-}
-.navbar ul a{
-  color: #fdb906;
-  text-decoration: none;
-  padding-right: 10px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
+/* Nav-Head */
+nav {
+  background-color: #fff;
+  position: fixed;
+  top: -40px;
+  width: 100%;
+  z-index: 999;
+  transition: top 0.5s;
+}
+
+nav.sticky {
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dbcf96;
+  text-align: center;
+  border-radius: 5px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav li a:hover {
+  background-color: #4caf50;
+}
+
+@media screen and (max-width: 600px) {
+  nav li {
+    display: block;
+    margin: 5px;
+  }
+
+  nav li a {
+    font-size: 14px;
+  }
+}
+
+/* Main */
+.con1 {
+  background-color: aqua;
+}
+.con2 {
+  background-color: pink;
+}
