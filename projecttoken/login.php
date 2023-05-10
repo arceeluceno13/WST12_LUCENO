@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['password'] = $password;
                 echo "<script>alert('Login successful as student!');</script>";
                 header("HTTP/1.1 303 See Other");
-                header("Location: student_dashboard.php?token=$token");
+                header("Location: Student_dashboard.php?token=$token");
                 exit();
             } else {
                 echo "<script>alert('Incorrect username or password.');</script>";
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit;
             }
 
-        } else if ($role === 'Alumni') {
+        } else if ($role === 'alumni') {
             if (strcasecmp($username, 'alumni@email.com') == 0 && $password === 'Alumni1!') {
                 session_start();
                 $token = uniqid();
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['password'] = $password;
                 echo "<script>alert('Login successful as Alumni!');</script>";
                 header("HTTP/1.1 303 See Other");
-                header("Location: alumni_dashboard.php?token=$token");
+                header("Location: Alumni_dashboard.php?token=$token");
                 exit();
             } else {
                 echo "<script>alert('Incorrect username or password.');</script>";
@@ -59,6 +59,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit;
             }
         }
-    }
+      else if ($role === 'employee') {
+            if (strcasecmp($username, 'employee@email.com') == 0 && $password === 'Employee1!') {
+                session_start();
+                $token = uniqid();
+                $_SESSION['login_token'] = $token;
+                $_SESSION['username'] = $username;
+                $_SESSION['password'] = $password;
+                echo "<script>alert('Login successful as Employee!');</script>";
+                header("HTTP/1.1 303 See Other");
+                header("Location: Employee_dashboard.php?token=$token");
+                exit();
+            } else {
+                echo "<script>alert('Incorrect username or password.');</script>";
+                echo "<script>window.location.href='login.html';</script>";
+                exit;
+            }
+        }
+}
 }
 ?>

@@ -6,4 +6,8 @@
                 document.getElementById("username").setAttribute("placeholder", "Enter your Email Address");
                 document.querySelector('label[for="username"]').textContent = "Email Address:";
             }
+            else if (role === "employee") {
+                document.getElementById("username").setAttribute("placeholder", "Enter your Email Address");
+                document.querySelector('label[for="username"]').textContent = "Email Address:";
+            }
         }
