@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B1B695;
+    width: 100%;
+    top: 0;
+    padding: 10px 5px;
+    z-index: 10;
+  }
+  .title a{
+    letter-spacing: 2px;
+    text-decoration: none;
+  
+  }
+  .navbar ul{
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  .navbar ul a{
+    color: #2E4052;
+    text-decoration: none;
+    padding-right: 10px;
+    letter-spacing: 2px;
+  }

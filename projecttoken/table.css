@@ -1,0 +1,45 @@
+*{
+    font-family: Consolas, serif;
+    margin: 0px;
+    padding: 0px;
+}
+tr, td, th{
+    padding: 5px;
+    border-collapse: collapse;
+    font-size: 18px
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.left-b{
+    border-right: dashed 2px black;
+    border-left: solid 1px black;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+body{
+    align-content:center;
+    margin: auto;
+    margin: 20px;
+    padding: 10px;
+}
+table caption{
+    font-size: 20px;
+    font-weight: bold; 	
+    margin-bottom: 10px;
+    margin-top: 30px;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+}
+h4{
+    font-size: 18px;
+}
+.border{
+    border: 1px solid black;
+}
+th{
+    background-color: lightgreen;
+}

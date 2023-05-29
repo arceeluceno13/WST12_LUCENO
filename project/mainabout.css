@@ -1,0 +1,16 @@
+body {
+  background: #42455a;
+}
+main{
+  min-height: 100vh;
+  position: static;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+    text-align: center;
+}

@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['password'] = $password;
                 echo "<script>alert('Login successful as student!');</script>";
                 header("HTTP/1.1 303 See Other");
-                header("Location: Student_dashboard.php?token=$token");
+                header("Location: studyload.php?token=$token");
                 exit();
             } else {
                 echo "<script>alert('Incorrect username or password.');</script>";

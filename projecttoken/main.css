@@ -1,5 +1,5 @@
-body {
-  background: #42455a;
+.div-margin{
+  padding-left: 125px;
 }
 section {
   min-height: 100vh;
@@ -209,6 +209,8 @@ section .text-container .text-box p {
   section .text-container {
     flex-direction: column;
   }
+
+  
 }
 
 .reveal {
@@ -222,6 +224,71 @@ section .text-container .text-box p {
   transform: translateY(0);
   opacity: 1;
 }
-.imagedraft img{
-    top
+
+
+/* Nav-Left */
+.sidenav {
+  text-align: center;
+  min-height: 100vh;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #b1b695;
+  overflow-x: hidden;
+  padding-top: 10rem;
 }
+
+.sidenav a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+  font-size: x-large;
+  display: block;
+  text-decoration: none;
+  transition: color .3s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  box-shadow: inset 110px 0 0 0 #54b3d6;
+}
+
+
+/* Nav-Right */
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.custom-navbar .burger-icon {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.custom-navbar .nav-link {
+  display: none; 
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.custom-navbar.active .nav-link {
+  display: block;
+}
+
+.custom-navbar a:hover {
+  color: #f1f1f1
+}
+
