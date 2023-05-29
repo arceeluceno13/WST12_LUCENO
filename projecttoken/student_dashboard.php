@@ -27,3 +27,6 @@ if (isset($_SESSION['username'], $_SESSION['password'])) {
    echo "Session not set";
 }
 ?>
+</body>
+
+</html>
